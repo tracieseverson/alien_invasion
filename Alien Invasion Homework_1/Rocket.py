@@ -8,9 +8,10 @@ class NewImage:
     def __init__(self, screen):
         """Initialize the image and set its starting position"""
         self.screen = screen
-        self.image = pygame.image.load('dog.bmp')
+        self.image = pygame.image.load('rocket.png')
         self.rect = self.image.get_rect()
         self.rect.center = self.screen.get_rect().center
+
 
     def draw(self):
         self.screen.blit(self.image, self.rect)
