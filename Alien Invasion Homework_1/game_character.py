@@ -23,7 +23,7 @@ pygame.init()
 screen = pygame.display.set_mode((400, 300))
 
 # Initialing RGB Color
-color = (0, 0, 255)
+color = (242, 247, 245)
 
 # Changing surface color
 screen.fill(color)
