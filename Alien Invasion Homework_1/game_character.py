@@ -8,7 +8,9 @@ class NewImage:
     def __init__(self, screen):
         """Initialize the image and set its starting position"""
         self.screen = screen
-        self.image = pygame.image.load('dog.bmp')
+        self.image = pygame.image.load('dog.bmp').convert()
+
+
         self.rect = self.image.get_rect()
         self.rect.center = self.screen.get_rect().center
 
@@ -20,10 +22,10 @@ class NewImage:
 pygame.init()
 
 # Initializing screen
-screen = pygame.display.set_mode((400, 300))
+screen = pygame.display.set_mode((400, 400))
 
 # Initialing RGB Color
-color = (242, 247, 245)
+color = (170, 244, 240)
 
 # Changing surface color
 screen.fill(color)
