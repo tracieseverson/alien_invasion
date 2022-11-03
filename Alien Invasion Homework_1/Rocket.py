@@ -10,8 +10,10 @@ class NewImage:
         """Initialize the image and set its starting position"""
         self.screen = screen
         self.screen_rect = screen.get_rect()
-        self.image = pygame.image.load('rocket.png').convert()
-        self.image.set_colorkey((230, 230, 230))
+        #self.image = pygame.image.load('rocket.png').convert()
+        self.image = pygame.image.load('dog2.bmp').convert_alpha()
+        #self.image.set_colorkey((230, 230, 230))
+        self.image.set_colorkey((224, 113, 5))
         self.rect = self.image.get_rect()
         self.rect.center = self.screen.get_rect().center
 
@@ -87,7 +89,8 @@ pygame.init()
 screen = pygame.display.set_mode((400, 300))
 
 # Initialing RGB Color
-color = (230, 230, 230)
+#color = (230, 230, 230)
+color = (224, 113, 5)
 
 # Changing surface color
 screen.fill(color)
