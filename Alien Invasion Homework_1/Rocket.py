@@ -81,6 +81,12 @@ class NewImage:
         self.screen.blit(self.image, self.rect)
         pygame.display.flip()
 
+    def run_game(self):
+        while True:
+            my_character.check_events()
+            my_character.update()
+            my_character.draw()
+
 
 # Initializing Pygame
 pygame.init()
@@ -99,9 +105,11 @@ my_character = NewImage(screen)
 
 ship_speed = 0.5
 
-while True:
-    my_character.check_events()
-    my_character.update()
-    my_character.draw()
+my_character.run_game()
+
+#while True:
+#    my_character.check_events()
+#    my_character.update()
+#    my_character.draw()
 
 # time.sleep(10)
