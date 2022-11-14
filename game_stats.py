@@ -5,6 +5,7 @@ class GameStats:
         """Initialize settings"""
         self.settings = ai_game.settings
         self.reset_stats()
+        self.game_active = True
 
     def reset_stats(self):
         """Initialize statstics that can change during the game"""
